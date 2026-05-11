@@ -1,0 +1,6 @@
+```bash
+git clone https://github.com/MarkPhrank/My-awesome-page
+cd My-awesome-page
+python3 -m http.server 8000
+http://0.0.0.0:8000/ ## открыть в браузере
+## выбрать из списка "home.html" и кликнуть на него, откроется главная страница.
