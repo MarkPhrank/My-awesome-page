@@ -1,0 +1,92 @@
+.game {
+  width: 630px;
+  height: 290px;
+  /* border-bottom: 1px solid #e803e4; */
+  margin: auto;
+  position: relative;
+  background-image: url(img/ground.png);
+  background-size: 600px 200px;
+  /* opacity: 0.4;
+  filter: alpha(opacity=40); */
+}
+
+#dino {
+  width: 75px;
+  height: 75px;
+  background-image: url(img/dino.png);
+  background-size: 75px 75px;
+  position: relative;
+  top: 150px;
+}
+#cactus {
+  width: 30px;
+  height: 60px;
+  background-image: url(img/cactus.png);
+  background-size: 30px 60px;
+  position: relative;
+  top: 90px;
+  left: 580px;
+  animation: cactusMov 1s infinite linear;
+}
+@keyframes cactusMov {
+  0% {
+    left: 580px;
+  }
+  100% {
+    left: -20px;
+  }
+}
+
+#bird {
+  width: 90px;
+  height: 90px;
+  background-image: url(img/bird.png);
+  background-size: 90px 90px;
+  position: relative;
+  top: 5px;
+  left: 580px;
+  animation: birdMov 3s infinite alternate-reverse;
+}
+@keyframes birdMov {
+  0% {
+    left: 580px;
+    top: -150px;
+  }
+  30% {
+    top: -50px;
+    left: 380px;
+  }
+  60% {
+    top: -120px;
+    left: 190px;
+  }
+  80% {
+    left: 220px;
+    top: 30px;
+  }
+  100% {
+    top: 0px;
+    left: 80px;
+  }
+}
+
+.jump {
+  animation: jump 0.3s linear;
+}
+@keyframes jump {
+  0% {
+    top: 150px;
+  }
+  30% {
+    top: 100px;
+  }
+  50% {
+    top: 30px;
+  }
+  80% {
+    top: 100px;
+  }
+  100% {
+    top: 150px;
+  }
+}
